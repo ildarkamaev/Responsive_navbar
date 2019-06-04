@@ -99,8 +99,8 @@ nav {
               right: 0;
               -webkit-transform: scale(0, 1);
                       transform: scale(0, 1);
-              -webkit-transform-origin: left;
-                      transform-origin: left;
+              -webkit-transform-origin: right;
+                      transform-origin: right;
               -webkit-transition: -webkit-transform ease-in-out 250ms;
               transition: -webkit-transform ease-in-out 250ms;
               transition: transform ease-in-out 250ms;
