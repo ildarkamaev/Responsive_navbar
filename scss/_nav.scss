@@ -1,6 +1,6 @@
 nav {
   position: absolute;
-  text-align: left;
+  text-align: right;
   top: 100%;
   width: 100%;
   background: $nav-bg;
@@ -23,7 +23,7 @@ nav {
     }
     li {
       margin-bottom: 1rem;
-      margin-left: 1rem;
+      margin-right: 1rem;
       @include mQ(600px) {
         margin: 0 2rem;
       }
@@ -77,8 +77,8 @@ nav {
 .nav-toggle-label {
   position: absolute;
   top: 0;
-  left: 0;
-  margin-left: 1rem;
+  right: 0;
+  margin-right: 1rem;
   display: flex;
   height: 100%;
   align-items: center;
