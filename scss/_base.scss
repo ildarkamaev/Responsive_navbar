@@ -10,9 +10,3 @@ h1 {
 h2 {
   font: 700 2rem $heading;
 }
-
-@mixin mQ($arg) {
-  @media screen and (min-width: $arg) {
-    @content;
-  }
-}
