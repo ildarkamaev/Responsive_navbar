@@ -36,6 +36,7 @@ nav {
         text-decoration: none;
         opacity: 0;
         transition: opacity 150ms ease-in-out;
+
         &:hover {
           color: complement($nav-bg);
         }
