@@ -13,4 +13,8 @@ header {
   .logo {
     color: $link;
   }
+  @include mQ(600px) {
+    display: flex;
+    justify-content: space-around;
+  }
 }
