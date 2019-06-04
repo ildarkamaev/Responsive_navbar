@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,700&display=swap");
 * {
   padding: 0;
   margin: 0; }
@@ -20,6 +20,8 @@ header {
   text-align: center;
   position: fixed;
   z-index: 999; }
+  header .logo {
+    color: white; }
 
 nav {
   position: absolute;
@@ -45,6 +47,7 @@ nav {
       nav ul li a {
         color: white;
         font-size: 1.2rem;
+        font-weight: 300;
         font-family: "Lato";
         text-transform: uppercase;
         text-decoration: none;
@@ -52,7 +55,7 @@ nav {
         -webkit-transition: opacity 150ms ease-in-out;
         transition: opacity 150ms ease-in-out; }
         nav ul li a:hover {
-          color: black; }
+          color: #b1604a; }
 
 .nav-toggle {
   display: none; }
@@ -102,13 +105,58 @@ nav {
 @media screen and (min-width: 600px) {
   .nav-toggle-label {
     display: none; }
-  .header {
+  header {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr auto minmax(600px, 1fr) 1fr;
-        grid-template-columns: 1fr auto minmax(600px, 1fr) 1fr; }
+    -ms-grid-columns: 1fr auto minmax(600px, 3fr) 1fr;
+        grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr; }
   .logo {
-    -ms-grid-column: 2;
+    -ms-grid-column: 1;
     -ms-grid-column-span: 1;
-    grid-column: 2 / 3; } }
+    grid-column: 1 / 2; }
+  nav {
+    all: unset;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3 / 4;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  nav ul li {
+    margin: 0 2rem; }
+  nav ul li a {
+    opacity: 1;
+    position: relative; }
+    nav ul li a::after {
+      content: "";
+      display: block;
+      height: 5px;
+      position: absolute;
+      top: 2.8rem;
+      left: 0;
+      right: 0;
+      -webkit-transform: scale(0, 1);
+              transform: scale(0, 1);
+      -webkit-transform-origin: left;
+              transform-origin: left;
+      -webkit-transition: -webkit-transform ease-in-out 250ms;
+      transition: -webkit-transform ease-in-out 250ms;
+      transition: transform ease-in-out 250ms;
+      transition: transform ease-in-out 250ms, -webkit-transform ease-in-out 250ms;
+      background: #b1604a; } }
+
+nav ul li a:hover::after {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1); }
 /*# sourceMappingURL=master.css.map */

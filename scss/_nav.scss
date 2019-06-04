@@ -15,15 +15,16 @@ nav {
       margin-bottom: 1rem;
       margin-left: 1rem;
       a {
-        color: white;
+        color: $link;
         font-size: 1.2rem;
+        font-weight: 300;
         font-family: $heading;
         text-transform: uppercase;
         text-decoration: none;
         opacity: 0;
         transition: opacity 150ms ease-in-out;
         &:hover {
-          color: black;
+          color: complement($nav-bg);
         }
       }
     }

@@ -10,4 +10,7 @@ header {
   text-align: center;
   position: fixed;
   z-index: 999;
+  .logo {
+    color: $link;
+  }
 }
