@@ -1,81 +1,71 @@
-header {
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
   width: 100%;
   background: $nav-bg;
-  text-align: center;
-  position: fixed;
-  z-index: 999;
-
-  nav {
-    position: absolute;
-    text-align: left;
-    top: 100%;
-    width: 100%;
-    background: $nav-bg;
-    // display: none;
-    transform: scale(1, 0);
-    transform-origin: top;
-    transition: transform 400ms ease-in-out;
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      li {
-        margin-bottom: 1rem;
-        margin-left: 1rem;
-        a {
-          color: white;
-          font-size: 1.2rem;
-          font-family: $heading;
-          text-transform: uppercase;
-          text-decoration: none;
-          opacity: 0;
-          transition: opacity 150ms ease-in-out;
-          &:hover {
-            color: black;
-          }
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      margin-bottom: 1rem;
+      margin-left: 1rem;
+      a {
+        color: white;
+        font-size: 1.2rem;
+        font-family: $heading;
+        text-transform: uppercase;
+        text-decoration: none;
+        opacity: 0;
+        transition: opacity 150ms ease-in-out;
+        &:hover {
+          color: black;
         }
       }
     }
   }
-  .nav-toggle {
-    display: none;
+}
+.nav-toggle {
+  display: none;
+}
+.nav-toggle:checked ~ nav {
+  transform: scale(1, 1);
+  a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
   }
-  .nav-toggle:checked ~ nav {
-    transform: scale(1, 1);
-    a {
-      opacity: 1;
-      transition: opacity 250ms ease-in-out 250ms;
-    }
-  }
-  .nav-toggle-label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-left: 1rem;
-    // border: 1px solid red;
-    display: flex;
-    height: 100%;
-    align-items: center;
-  }
-  .nav-toggle-label span,
-  .nav-toggle-label span::before,
-  .nav-toggle-label span::after {
-    display: block;
-    height: 2px;
-    width: 1.8rem;
-    background: white;
-    border-radius: 2px;
-    position: relative;
-  }
-  .nav-toggle-label span::before,
-  .nav-toggle-label span::after {
-    content: "";
-    position: absolute;
-  }
-  .nav-toggle-label span::before {
-    bottom: 8px;
-  }
-  .nav-toggle-label span::after {
-    top: 8px;
-  }
+}
+.nav-toggle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1rem;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  height: 2px;
+  width: 1.8rem;
+  background: white;
+  border-radius: 2px;
+  position: relative;
+}
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: "";
+  position: absolute;
+}
+.nav-toggle-label span::before {
+  bottom: 8px;
+}
+.nav-toggle-label span::after {
+  top: 8px;
 }

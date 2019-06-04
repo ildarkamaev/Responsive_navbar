@@ -1,34 +1,19 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
+@import "variables";
+@import "base";
+@import "content";
 @import "nav";
-$heading: "Lato";
-$nav-bg: #4a9bb1;
-$header-bg: #1b2432;
-* {
-  padding: 0;
-  margin: 0;
+
+@media screen and (min-width: 600px) {
+  .nav-toggle-label {
+    display: none;
+  }
+
+  .header {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 1fr) 1fr;
+  }
+
+  .logo {
+    grid-column: 2 / 3;
+  }
 }
-
-.content {
-  height: 120vh;
-  background: url(../bg.jpg) no-repeat center center;
-  background-size: cover;
-}
-
-h1 {
-  font: 700 4rem $heading;
-}
-
-h2 {
-  font: 700 2rem $heading;
-}
-
-// @media screen and (min-width: 600px) {
-//   .nav-toggle-label {
-//     display: inline;
-//   }
-
-//   .header {
-//     display: grid;
-//     grid-template-columns: 1fr auto minmax(600px, 1fr) 1fr;
-//   }
-// }
