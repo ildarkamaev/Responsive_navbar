@@ -81,45 +81,21 @@ nav {
       -ms-flex-align: center;
           align-items: center; }
 
-.nav-toggle-label span,
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-  display: block;
-  height: 2px;
-  width: 1.8rem;
-  background: white;
-  border-radius: 2px;
-  position: relative; }
-
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-  content: "";
-  position: absolute; }
-
-.nav-toggle-label span::before {
-  bottom: 8px; }
-
-.nav-toggle-label span::after {
-  top: 8px; }
+.hamburger {
+  color: white;
+  font-size: 2rem; }
 
 @media screen and (min-width: 600px) {
   .nav-toggle-label {
     display: none; }
   header {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr auto minmax(600px, 3fr) 1fr;
-        grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr; }
-  .logo {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1 / 2; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
   nav {
     all: unset;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 1;
-    grid-column: 3 / 4;
-    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -141,7 +117,7 @@ nav {
     nav ul li a::after {
       content: "";
       display: block;
-      height: 5px;
+      height: 6px;
       position: absolute;
       top: 2.8rem;
       left: 0;

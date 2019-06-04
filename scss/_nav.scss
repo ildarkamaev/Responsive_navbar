@@ -48,25 +48,10 @@ nav {
   display: flex;
   height: 100%;
   align-items: center;
+  // pointer: cursor;
 }
-.nav-toggle-label span,
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-  display: block;
-  height: 2px;
-  width: 1.8rem;
-  background: white;
-  border-radius: 2px;
-  position: relative;
-}
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-  content: "";
-  position: absolute;
-}
-.nav-toggle-label span::before {
-  bottom: 8px;
-}
-.nav-toggle-label span::after {
-  top: 8px;
+
+.hamburger {
+  color: $link;
+  font-size: 2rem;
 }
