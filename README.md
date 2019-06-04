@@ -16,13 +16,12 @@ I built a webpage responsive navbar.
 * How to make a hamburger menu navbar using CSS using span and ::before/after classes
 * Using checkbox and styling it for use in navbars is handy
 * How to create cool underline hover effect using ::before pseudo-classes
+* How to use media querys with Sass @content
 * How to customize Font-awesome 
 
 ## Problems/Mistakes
 * Implementing font awesome was unneccesssarly complex for some reason, but I managed.
 
-## Things left to-do
-* Implement media querys in SASS using mixins
 
 
 ## License
