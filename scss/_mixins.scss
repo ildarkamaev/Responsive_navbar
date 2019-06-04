@@ -4,9 +4,9 @@
   }
 }
 
-@mixin trans($property, $duration, $timing-function, $delay) {
-  transition-property: $property;
-  transition-duration: $duration;
-  transition-timing-function: ease-in-out;
-  transition-delay: $delay;
-}
+// @mixin trans($property, $duration, $timing-function, $delay) {
+//   transition-property: $property;
+//   transition-duration: $duration;
+//   transition-timing-function: ease-in-out;
+//   transition-delay: $delay;
+// }
